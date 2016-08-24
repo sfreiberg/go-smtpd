@@ -39,7 +39,7 @@ type Server struct {
 	// If it returns non-nil, the connection is closed.
 	OnNewConnection func(c Connection) error
 
-	// OnNewMail must be defined and is called when a new message beings.
+	// OnNewMail must be defined and is called when a new message begins.
 	// (when a MAIL FROM line arrives)
 	OnNewMail func(c Connection, from MailAddress) (Envelope, error)
 }
